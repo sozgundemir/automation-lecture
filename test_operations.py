@@ -10,7 +10,7 @@ import csv
 # Unit test
 def test_find_max():
     """
-    Test operations.find_max 
+    Test operations.find_max
     """
     # Fixture
     data = [43, 32, 167, 18, 1, 209]
@@ -32,14 +32,14 @@ def test_find_mean():
     """
     # Fixture
     data = [43, 32, 167, 18, 1, 209]
-    
+
     # Expected result
     expected_mean = 78.33
     # expected_mean = pytest.approx(78.33, abs=0.01)
-    
+
     # Actual result
     actual_mean = find_mean(data)
-    
+
     # Test
     assert actual_mean == expected_mean
 
@@ -61,7 +61,7 @@ def test_mean_of_max():
 
     # Actual result
     actual_mean_of_max = find_mean([maximum1, maximum2])
-    
+
     # Test
     assert actual_mean_of_max == expected_mean_of_max
 
@@ -81,8 +81,8 @@ def test_regression_mean():
 
     # Actual result
     actual_mean = find_mean(data)
-    
+
     expected_mean = pytest.approx(reference_mean[0], abs=0.01)
-    
+
     # Test
     assert actual_mean == expected_mean
