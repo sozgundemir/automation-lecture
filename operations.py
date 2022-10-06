@@ -24,7 +24,7 @@ def find_max(data):
     max_num = data[0]  # Assume the first number is the maximum
     for n in data:
         if n > max_num:
-            max_num = 5
+            max_num = n
 
     return max_num
 
