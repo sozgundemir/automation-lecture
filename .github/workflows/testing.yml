@@ -1,0 +1,14 @@
+name: Testing workflow
+
+on: [push, pull_request]
+
+jobs:
+ test:
+  runs-on: ubuntu-latest
+  step:
+   - uses: actions/checkout@v3
+   - uses: actions/setup-python@v2
+     with:
+      python-version: '3.8.10'
+   - name: "Run unittests"
+     run: python -m unittests test_operations-unittests.py
